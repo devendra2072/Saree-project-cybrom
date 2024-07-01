@@ -1,0 +1,90 @@
+// ---------------this is navbar section----------------------
+.navbar {
+  color: red;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navch1 {
+      display: flex;
+      justify-content: end;
+      padding-left: 400px;
+      // margin-left: 400px;
+    }
+    .navch2 {
+      display: flex;
+      justify-content: space-around;
+      padding-left: 300px;
+      li a i {
+        font-size: 30px;
+      }
+    }
+  }
+  ul li {
+    list-style: none;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+  }
+  ul li a {
+    text-decoration-line: none;
+    color: purple;
+    font-size: 22px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  ul li::after {
+    color: yellow;
+    content: "";
+    background-color: aqua;
+    width: 0;
+    left: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -6px;
+  }
+  ul li:hover::after {
+    color: yellow;
+    font-size: 50px;
+    width: 85%;
+    transition: 1s;
+  }
+}
+.navbar label {
+  display: none;
+  margin-top: 50px;
+}
+#demo {
+  display: none;
+}
+#demo:checked ~ .navbar ul .navch1 {
+  display: block;
+}
+@media screen and (max-width: 450px) {
+  .navbar {
+    height: 90px;
+    width: 100%;
+  }
+  .navbar label {
+    display: block;
+  }
+  .navbar ul .navch1 {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 40%;
+    background-color: rgb(229, 229, 236);
+    padding-left: 40px;
+    margin-left: -320px;
+    margin-top: 100px;
+    box-shadow: 3px 3px 3px 1px black;
+  }
+  .navbar ul .navch2 {
+    margin-top: -45px;
+    margin-left: -40px;
+    padding-left: 30px;
+    box-shadow: 3px 3px 3px 1px black;
+  }
+}

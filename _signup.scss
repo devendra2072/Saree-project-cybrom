@@ -1,0 +1,51 @@
+
+@media screen and (max-width:450px) {
+  .signform{
+    width: 80%;
+    margin-left: -160px;
+  }
+  
+}
+.signbody{
+  padding-left: 35%;
+  background-image: url(signup.jpg);
+  input::placeholder{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.signform{
+  width: 500px;
+  backdrop-filter: blur(15px);
+  // border: 3px solid black;
+  box-shadow: 5px 5px 20px 5px black;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  .sign{
+     margin-left: -160px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .sign2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .signdiv input{
+    height: 25px;
+  }
+  .signdiv2 input{
+    width: 348px;
+    height: 25px;
+  }
+  .signbtn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+  .signbtn:hover{
+    transform:scale(1.2);
+    transition: transform 0.23s;
+  }
+}
+}

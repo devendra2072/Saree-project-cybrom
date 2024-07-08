@@ -1,0 +1,78 @@
+.orderplace{
+    margin-top: 100px;
+ input::placeholder{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+ } 
+.orderplace1 input{
+    width: 400px;
+    height: 30px;
+}
+
+.orderplace2{
+    margin-left: 39.3%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+i{
+    font-size: 12px;
+    font-weight: 200px;
+    padding: 10px 30px 10px 30px ;
+    color: white;
+    background-color: rgb(11, 86, 226);
+}
+input{
+    height: 30px;
+    width: 185px;
+}
+} 
+.orderplace3{
+    margin-left: 39.3%;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+input{
+        height: 30px;
+        width: 185px;
+    }
+}
+.orderplace4 input{
+    height: 30px;
+    width: 400px;
+}  
+
+.orderplace5{
+    word-spacing: 15px;
+i{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-weight: 200px;
+    font-size: 10px;
+}
+}
+.orderplace6{
+    word-spacing: 20px;
+input:hover{
+    background-color: aqua;
+}
+input{
+ border: none;
+ font-size: 20px;
+ box-shadow: 2px 2px 5px 1px black;
+
+}
+}
+}
+@media screen and  (max-width:450px) {
+    .orderplace .orderplace3{
+        margin-left: 2%;
+    }
+    .orderplace .orderplace2{
+        margin-left: 2%;
+    }
+    
+}

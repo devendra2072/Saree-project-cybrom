@@ -1,0 +1,85 @@
+.dehead{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: purple;
+    text-decoration-line: underline;
+}
+.dh {
+  color: red;
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//   font-style: italic;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+.designcontainer {
+  margin-left: 15px;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    text-decoration-line: underline;
+  }
+
+  .designconch {
+    flex-wrap: wrap-reverse;
+    display: grid;
+    column-gap: 130px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-template-rows: repeat(1, 700px);
+    grid-template-columns: repeat(15, 300px);
+  }
+  /*.cs {
+                border: 5px solid;
+              }*/
+  .csdis {
+    background-color: rgb(200, 44, 44);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: aliceblue;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+  }
+  .csdes {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(65, 63, 63);
+  }
+  .disPrice {
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+  }
+  .oriPrice {
+    color: gray;
+    text-decoration: line-through;
+  }
+}
+.cs:hover {
+  transform: scale(1.16);
+  transition: transform 3.55s;
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+  .designconch {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .designconch {
+    grid-template-columns: auto;
+  }
+}

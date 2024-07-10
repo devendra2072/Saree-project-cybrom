@@ -295,11 +295,21 @@
 @media screen and (min-width: 450px) and (max-width: 800px) {
   .trending {
     grid-template-columns: repeat(3, auto);
+  .adtos{
+    margin-right: 1000px;
+  }
+    
   }
 }
 
 @media screen and (max-width: 450px) {
   .trending {
     grid-template-columns: auto;
+    .adtos{
+      // margin-right: 0px;
+    }
+    input{
+    margin-left: 0px;
+    }
   }
 }

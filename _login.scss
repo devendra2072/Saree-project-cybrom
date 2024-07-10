@@ -1,11 +1,11 @@
 // -------------this is login page-----------
 @media screen and (max-width:600px) {
-    .loginl {
-      margin-left: -170px;
-      height: 100%;
+    .login {
+      // margin-left: -170px;
+      // height: 100%;
       width: 100%;
-      margin-bottom: 10px;
-      margin-top: -80px;
+      // margin-bottom: 10px;
+      // margin-top: -80px;
     }
   }
   .loginl{
@@ -15,7 +15,11 @@
       transition: transform 0.10s;
       background-color:  white;
     }
-  
+    .logininfrom{
+      display: flex;
+      justify-content: center;
+      // margin-left: 35%;
+    }
     .login {
       background-color: rgba(0,0,0,0.5);
       backdrop-filter: blur(15px);
@@ -23,10 +27,10 @@
       font-size: 25px;
       font-weight: bold;
       color: white;
-      margin-top: 100px;
+      margin-top: 50px;
       align-items: start;
       text-align: center;
-      margin-left: 35%;
+      // margin-left: 35%;
       border: 2px solid aqua;
       width: 500px;
       box-shadow: 3px 3px 5px 5px black;

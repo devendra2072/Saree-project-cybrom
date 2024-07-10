@@ -1,13 +1,15 @@
 
 @media screen and (max-width:450px) {
-  .signform{
+
+.signbody .signform{
     width: 80%;
-    margin-left: -160px;
+    // margin-left: 0%;
   }
   
 }
+
 .signbody{
-  padding-left: 35%;
+  // padding-left: 35%;
   background-image: url(signup.jpg);
   input::placeholder{
     color: black;
@@ -15,12 +17,18 @@
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  .signupfrom{
+    display: flex;
+    justify-content: center;
+  }
 .signform{
+  // padding-left: 35%;
+   text-align: center;
   width: 500px;
   backdrop-filter: blur(15px);
-  // border: 3px solid black;
   box-shadow: 5px 5px 10px 5px black;
-  margin-top: 100px;
+  margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 20px;
   .sign{

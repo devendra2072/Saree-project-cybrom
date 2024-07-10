@@ -1,10 +1,6 @@
 @media screen and (max-width: 600px) {
-  .loginl {
-    margin-left: -170px;
-    height: 100%;
+  .login {
     width: 100%;
-    margin-bottom: 10px;
-    margin-top: -80px;
   }
 }
 .loginl {
@@ -15,6 +11,10 @@
   transition: transform 0.1s;
   background-color: white;
 }
+.loginl .logininfrom {
+  display: flex;
+  justify-content: center;
+}
 .loginl .login {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(15px);
@@ -23,10 +23,9 @@
   font-size: 25px;
   font-weight: bold;
   color: white;
-  margin-top: 100px;
+  margin-top: 50px;
   align-items: start;
   text-align: center;
-  margin-left: 35%;
   border: 2px solid aqua;
   width: 500px;
   box-shadow: 3px 3px 5px 5px black;
@@ -97,13 +96,11 @@
 }
 
 @media screen and (max-width: 450px) {
-  .signform {
+  .signbody .signform {
     width: 80%;
-    margin-left: -160px;
   }
 }
 .signbody {
-  padding-left: 35%;
   background-image: url(signup.jpg);
 }
 .signbody input::-moz-placeholder {
@@ -118,12 +115,17 @@
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
 }
+.signbody .signupfrom {
+  display: flex;
+  justify-content: center;
+}
 .signbody .signform {
+  text-align: center;
   width: 500px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 5px 5px 10px 5px black;
-  margin-top: 100px;
+  margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -425,10 +427,16 @@
   .trending {
     grid-template-columns: repeat(3, auto);
   }
+  .trending .adtos {
+    margin-right: 1000px;
+  }
 }
 @media screen and (max-width: 450px) {
   .trending {
     grid-template-columns: auto;
+  }
+  .trending input {
+    margin-left: 0px;
   }
 }
 .dehead {
@@ -517,22 +525,14 @@
   }
 }
 .details {
-  display: grid;
-  grid-template-columns: repeat(3, 150px, 600px, 300px);
-  grid-template-rows: repeat(2, 500px);
-  grid-column-end: 3;
-  grid-column-start: 1;
-  margin-left: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .details .detailprnt1 {
   grid-auto-flow: row;
   overflow-y: auto;
-  height: 890px;
-}
-.details .ch {
-  margin-left: 100px;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  height: 800px;
 }
 .details .ch img {
   box-shadow: 5px 5px 10px 3px black;
@@ -543,12 +543,6 @@
 .details img:hover {
   transform: scale(1.13);
   transition: transform 0.55s;
-}
-.details .detailprnt3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  margin-right: 150px;
-  margin-left: 100px;
 }
 .details .detailprnt3 .detailch1 i input {
   border: none;
@@ -563,16 +557,25 @@
   font-weight: 100;
 }
 
+.trendingstyle h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 50px;
+}
+.trendingstyle img {
+  gap: 30px;
+}
+
 @media screen and (max-width: 450px) {
-  details {
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: 9, auto;
+  .details .detailprnt2 img {
+    width: 300px;
+    height: 800px;
   }
 }
 .ordersucful {
   text-align: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
@@ -615,7 +618,7 @@
 
 /* -------------------this is last list menu ba footer section------------------------ */
 .parent2 {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
   background-color: plum;
@@ -707,7 +710,7 @@
 }
 
 .orderplace {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .orderplace input::-moz-placeholder {
   color: black;
